@@ -3,10 +3,11 @@
 #include <stdio.h>
 
 /**
- * main prints the last digit of arandom generating number, whether
- *   >5, <6 or 0.
+ * main - Entry point
+ * prints the last digit of arandom generating number,
+ * whether >5, <6 or 0.
  *
- *  return: always 0.
+ *  Return: Always 0 (Success)
  */
 int main(void)
 {
