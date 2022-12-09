@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combination of 3 digits
+ * main - prints all possible d/t combination of 3 digits
  *
- *  Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
