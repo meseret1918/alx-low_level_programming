@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Entry point
  * prints the alphabet in lowercase.
  *
- * return: always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -16,5 +16,6 @@ int main(void)
 		putchar(letter);
 
 	putchar('\n');
+
 	return (0);
 }
