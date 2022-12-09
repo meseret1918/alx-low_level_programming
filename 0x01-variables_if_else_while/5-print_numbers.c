@@ -2,10 +2,10 @@
 
 /**
  * main - entry point
- * a program that prints all single digit numbers of base 10 
+ * prints all single digit numbers of base 10 
  * starting from 0, followed by a new line
  *
- * return: always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
