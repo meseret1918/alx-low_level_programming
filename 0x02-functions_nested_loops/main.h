@@ -1,7 +1,12 @@
 #ifndef MESERET_H_INCLUDE
 #define MESERET_H_INCLUDE
 
-int putchar(char);
+/**
+ * file: main.h
+ *
+ * desc:header file used in 0x02-functions_nested_loops directory.
+ */
+int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
