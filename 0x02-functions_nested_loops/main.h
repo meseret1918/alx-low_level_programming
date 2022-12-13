@@ -1,4 +1,4 @@
-#ifdef MESERET_H_INCLUDE
+#ifndef MESERET_H_INCLUDE
 #define MESERET_H_INCLUDE
 
 int putchar(char);
