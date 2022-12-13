@@ -1,22 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - lists allthe natural number below 1024 exclude 
- * that are multiple of 3 or 5
+ * main - prints first 50 fibonacci numbers
  *
  * Return: always 0
  */
 int main(void)
 {
-	int i, sum = 0;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	for (i = 0; i < 1024; i++)
+	for (count = 0; count < 50; count++)
 	{
-		if ((i % 3) == 0 || (i % 5) == 0)
-			sum += i;
+		sum = fib1 + fib2;
+		printf("%lu", sum);
+
+		fib1 = fib2;
+		fib2 = sum;
+
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
 
-	printf("%d\n", sum);
 
 	return (0);
 }
