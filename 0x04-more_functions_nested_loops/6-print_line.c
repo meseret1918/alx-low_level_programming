@@ -2,26 +2,20 @@
 
 /**
   * print_line - a function that draws a straight line in the terminal
-  * @n: The number of lines to draw
+  * @n: n - Variable
   *
-  * Return: 0
+  * Return: Always 0
   */
 void print_line(int n)
 {
 	int x;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (x = 0; x < n; x++)
+		for (x = 1; x <= n; x++)
 		{
-			_putchar(100);
+			_putchar(95);
 		}
-
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
-
