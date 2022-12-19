@@ -1,12 +1,14 @@
 #include "main.h"
+#include <stdlib.h>
+#include<stdio.h>
 
 /**
  * _atoi - Entry point
  * @s: input
- * Return: Always 0 (Success)
+ * Return: integer
  */
 int _atoi(char *s)
 {
 
-	return (0);
+	return (*s);
 }
