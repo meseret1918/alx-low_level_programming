@@ -1,21 +1,19 @@
 #include "main.h" 
   
  /** 
-  * _strncpy - Entry point 
-  * @dest: copy to 
-  * @src: copy from 
-  * @n: input number of char 
-  * Return: Always 0 (Success) 
+  * _strlen - a function that returns the length of a string 
+  * @s: char input 
+  * Return: length of the input string 
   */ 
- char *_strncpy(char *dest, char *src, int n) 
+ int _strlen(char *s) 
  { 
-         int i; 
+         int i = 1, sum = 0; 
+         char pl = s[0]; 
   
-         for (i = 0; src[i] != '\0'; i++) 
-                 if (i < n) 
-                         dest[i] = src[i]; 
-                 while (i < n) 
-                         dest[i++] = '\0'; 
-  
-         return (dest); 
+         while (pl != '\0') 
+         { 
+                 sum++; 
+                 pl = s[i++]; 
+         } 
+         return (sum); 
  }
