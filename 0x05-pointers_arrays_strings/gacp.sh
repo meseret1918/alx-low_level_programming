@@ -1,6 +1,6 @@
 #!/bin/bash
 git add .
-echo "enter your commit message"
-read commit message
-git commit -m "$commit message"
+echo "enter your commit"
+read commit
+git commit -m "$commit"
 git push
