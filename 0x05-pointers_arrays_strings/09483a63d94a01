@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+/**
+ * main - a program that generates random valid passwords
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+
+	return (0);
+}
