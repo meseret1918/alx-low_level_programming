@@ -10,11 +10,11 @@
  */
 int prime_checker(int x, int y)
 {
-        if (x == y)
-                return (1);
-        else if (x % y == 0)
-                return (0);
-        return (prime_checker(x, y + 1));
+	if (x == y)
+		return (1);
+	else if (x % y == 0)
+		return (0);
+	return (prime_checker(x, y + 1));
 }
 
 /**
