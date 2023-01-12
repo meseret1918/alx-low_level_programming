@@ -1,7 +1,10 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
 
 /**
- * main - a program that multiplies two positive numbers
+ * main - multiplies two positive numbers
  * @argc: n arguments
  * @argv: args
  * Return: int
