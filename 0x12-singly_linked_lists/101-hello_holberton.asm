@@ -1,8 +1,8 @@
-; File: 101-hello_holberton.asm
+;File: 101-hello_holberton.asm
+;Desc: 64-bit assembly program that prints
+;Hello, Holberton followed by a new line
 
-; Desc: 64-bit assembly program that prints
-;       Hello, Holberton followed by a new line. 
-    
+
 section .text
 global main	        ;must be declared for linker
 main:			;tells linker entry point
