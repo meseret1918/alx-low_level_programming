@@ -5,9 +5,9 @@
 extern printf
 
 section .text
-   global begin
+   global main
 
-begin:
+main:
    push rbp
 
    mov rdi,len
