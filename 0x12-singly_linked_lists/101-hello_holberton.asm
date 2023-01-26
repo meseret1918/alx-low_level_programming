@@ -5,17 +5,21 @@
 extern printf
 
 section .text
-global main	        ;must be declared for linker
-main:			;tells linker entry point
-mov rdx,len	;message length
-mov rcx,msg	;message to write
-mov rbx,1	;file descriptor (stdout)
-mov rax,4	;system call number (sys_write)
-int 0x80	;call kernel
+   global begin
 
-mov rax,1	;system call number (sys_exit)
-int 0x80	;call kernel
+begin:
+   push rbp
 
-section	.data
-msg db "Hello, Holberton", 0xa ;msg with newline character
-len equ $ - msg	;length of string
+   mov rdi,len
+   mov rsi,msg
+   mov rax,0
+   call printf
+
+   pop rbp
+
+   mov rax,0
+   ret
+
+section .data
+   msg: db "Hello, Holberton", 0
+   len: db "%s", 10, 0
