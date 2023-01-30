@@ -4,6 +4,7 @@
  * insert_nodeint_at_index - a function inserts a new node at a given position
  * @head: A pointer to the address of the head of the listint_t list.
  * @idx: the index of the list where the new node should be added
+ * @n: number of nodes
  *
  * Return: NULL, if the function failed
  * Otherwise - the address of the new node.
