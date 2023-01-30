@@ -11,30 +11,23 @@ listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *my, *name;
 
-	if (head == NULL || head->next == NULL)
+	if (!head)
 		return (NULL);
-
-	my = head->next;
-	name = (head->next)->next;
-
-	while (name)
+	my = name = head;
+	while (name->next && (name->next)->next)
 	{
+		my = my->next;
+		name = (name->next)->next;
 		if (my == name)
 		{
-			my = name;
-
+			my = head;
 			while (my != name)
 			{
 				my = my->next;
 				name = name->next;
 			}
-
-			return (my);
+			return (name);
 		}
-
-		my = my->next;
-		name = (name->next)->next;
 	}
-
 	return (NULL);
 }
