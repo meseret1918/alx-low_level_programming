@@ -18,12 +18,12 @@ int append_text_to_file(const char *filename, char *text_content)
 		text_content = "";
 
 
-	while (text_content[i] != '\0')
+	while (text_content[text] != '\0')
 	{
 		text++;
 	}
 
-	file = open(filename, O_WRONLY | O_APPEND);
+	file = open(filename, O_WRONLY | O_APPEND, 0);
 
 	if (file == -1)
 		return (-1);
