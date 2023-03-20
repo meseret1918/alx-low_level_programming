@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -p .. https://raw.github.com/meseret1918/alx-low_level_programming/master/0x18-dynamic_libraries/test.so
+wget -p .. https://github.com/meseret1918/alx-low_level_programming/tree/master/0x18-dynamic_libraries/test.so
 export LD_PRELOAD="$PWD/../test.so"
