@@ -1,2 +1,2 @@
 all: main.c my_file.c
-	gcc main.c holberton.c -o holberton
+	gcc main.c my_file.c -o my_file
