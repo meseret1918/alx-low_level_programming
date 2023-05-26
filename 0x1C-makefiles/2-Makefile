@@ -1,0 +1,6 @@
+CC = gcc
+SRC = main.c my_file.c
+OBJ = $(SRC:.c=.o)
+NAME = my_file
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
