@@ -1,2 +1,2 @@
-all: main.c my_file.c m.h
-	gcc main.c my_file.c -o my_file
+all: main.c school.c
+	gcc main.c school.c -o school
